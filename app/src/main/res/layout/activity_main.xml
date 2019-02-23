@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty"
+        android:layout_margin="15dp"
+        android:layout_marginTop="100dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFF123"
+            android:padding="10dp" />
+
+
+        <TextView
+
+            android:id="@+id/tvName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="نام: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llName"
+        android:layout_margin="15dp"
+        android:layout_marginTop="100dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFF123"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/tvLastName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="نام خانوادگی: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llLastName"
+        android:layout_margin="15dp"
+        android:layout_marginTop="100dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etPersonalCode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFF123"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/tvPersonalCode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="کد شناسایی :"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llPersonal"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="حذف"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="بروزرسانی"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="نمایش"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="ذخیره"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
